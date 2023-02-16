@@ -1,0 +1,6 @@
+SLACK_CHANNEL_NAME  = #jenkinscicd
+ENVIRONMENT         = prod
+CODE_BASE_PATH      = env/prod
+ACTION_MESSAGE      = *${currentBuild.currentResult}:* \n *Job_Name:* '${JOB_NAME}' \n *USER:* '${USER}' \n *Stage_Name:* ${STAGE_NAME} \n *Build_Number:* '${BUILD_NUMBER}' \n *More info at:* '${BUILD_URL}'",
+    teamDomain: 'ninja-gjj9738', tokenCredentialId: 'slack'
+KEEP_APPROVAL_STAGE = true
